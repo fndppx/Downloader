@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035AA6B522D2EE7800BBCE52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6B422D2EE7800BBCE52 /* AppDelegate.m */; };
+		035AA6B822D2EE7800BBCE52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6B722D2EE7800BBCE52 /* ViewController.m */; };
+		035AA6BB22D2EE7800BBCE52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035AA6B922D2EE7800BBCE52 /* Main.storyboard */; };
+		035AA6BD22D2EE7D00BBCE52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035AA6BC22D2EE7D00BBCE52 /* Assets.xcassets */; };
+		035AA6C022D2EE7D00BBCE52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035AA6BE22D2EE7D00BBCE52 /* LaunchScreen.storyboard */; };
+		035AA6C322D2EE7D00BBCE52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6C222D2EE7D00BBCE52 /* main.m */; };
+		035AA6CD22D2EE7D00BBCE52 /* DownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6CC22D2EE7D00BBCE52 /* DownloaderTests.m */; };
+		035AA6D822D2EE7D00BBCE52 /* DownloaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6D722D2EE7D00BBCE52 /* DownloaderUITests.m */; };
+		035AA6F322D2EEAE00BBCE52 /* SXTCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6EC22D2EEAE00BBCE52 /* SXTCommonUtil.m */; };
+		035AA6F422D2EEAE00BBCE52 /* SXTDownloadDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6ED22D2EEAE00BBCE52 /* SXTDownloadDBManager.m */; };
+		035AA6F522D2EEAE00BBCE52 /* SXTDownloadConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6EE22D2EEAE00BBCE52 /* SXTDownloadConst.m */; };
+		035AA6F622D2EEAE00BBCE52 /* NSURLSession+CorrectedResumeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6F022D2EEAE00BBCE52 /* NSURLSession+CorrectedResumeData.m */; };
+		035AA6F722D2EEAE00BBCE52 /* SXTDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6F122D2EEAE00BBCE52 /* SXTDownloadManager.m */; };
+		035AA6F822D2EEAE00BBCE52 /* SXTDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6F222D2EEAE00BBCE52 /* SXTDownloadModel.m */; };
+		035AA6FB22D2EFE600BBCE52 /* SXTNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 035AA6FA22D2EFE600BBCE52 /* SXTNetworkMonitor.m */; };
+		D9C3810236890ADA5EB9FCA9 /* libPods-Downloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D374E3BF1F5862B10378B7 /* libPods-Downloader.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		035AA6C922D2EE7D00BBCE52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 035AA6A822D2EE7800BBCE52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 035AA6AF22D2EE7800BBCE52;
+			remoteInfo = Downloader;
+		};
+		035AA6D422D2EE7D00BBCE52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 035AA6A822D2EE7800BBCE52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 035AA6AF22D2EE7800BBCE52;
+			remoteInfo = Downloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		035AA6B022D2EE7800BBCE52 /* Downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Downloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		035AA6B322D2EE7800BBCE52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		035AA6B422D2EE7800BBCE52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		035AA6B622D2EE7800BBCE52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		035AA6B722D2EE7800BBCE52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		035AA6BA22D2EE7800BBCE52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		035AA6BC22D2EE7D00BBCE52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		035AA6BF22D2EE7D00BBCE52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		035AA6C122D2EE7D00BBCE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		035AA6C222D2EE7D00BBCE52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		035AA6C822D2EE7D00BBCE52 /* DownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		035AA6CC22D2EE7D00BBCE52 /* DownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloaderTests.m; sourceTree = "<group>"; };
+		035AA6CE22D2EE7D00BBCE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		035AA6D322D2EE7D00BBCE52 /* DownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		035AA6D722D2EE7D00BBCE52 /* DownloaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloaderUITests.m; sourceTree = "<group>"; };
+		035AA6D922D2EE7D00BBCE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		035AA6E622D2EEAE00BBCE52 /* SXTDownloadDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTDownloadDBManager.h; sourceTree = "<group>"; };
+		035AA6E722D2EEAE00BBCE52 /* SXTCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTCommonUtil.h; sourceTree = "<group>"; };
+		035AA6E822D2EEAE00BBCE52 /* SXTDownloadConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTDownloadConst.h; sourceTree = "<group>"; };
+		035AA6E922D2EEAE00BBCE52 /* SXTDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTDownloadManager.h; sourceTree = "<group>"; };
+		035AA6EA22D2EEAE00BBCE52 /* NSURLSession+CorrectedResumeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+CorrectedResumeData.h"; sourceTree = "<group>"; };
+		035AA6EB22D2EEAE00BBCE52 /* SXTDownloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTDownloadModel.h; sourceTree = "<group>"; };
+		035AA6EC22D2EEAE00BBCE52 /* SXTCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTCommonUtil.m; sourceTree = "<group>"; };
+		035AA6ED22D2EEAE00BBCE52 /* SXTDownloadDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTDownloadDBManager.m; sourceTree = "<group>"; };
+		035AA6EE22D2EEAE00BBCE52 /* SXTDownloadConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTDownloadConst.m; sourceTree = "<group>"; };
+		035AA6EF22D2EEAE00BBCE52 /* SXTDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTDownload.h; sourceTree = "<group>"; };
+		035AA6F022D2EEAE00BBCE52 /* NSURLSession+CorrectedResumeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+CorrectedResumeData.m"; sourceTree = "<group>"; };
+		035AA6F122D2EEAE00BBCE52 /* SXTDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTDownloadManager.m; sourceTree = "<group>"; };
+		035AA6F222D2EEAE00BBCE52 /* SXTDownloadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTDownloadModel.m; sourceTree = "<group>"; };
+		035AA6F922D2EFE600BBCE52 /* SXTNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTNetworkMonitor.h; sourceTree = "<group>"; };
+		035AA6FA22D2EFE600BBCE52 /* SXTNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTNetworkMonitor.m; sourceTree = "<group>"; };
+		035AA6FC22D2F00000BBCE52 /* IKBLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKBLog.h; sourceTree = "<group>"; };
+		2FECA00853614A3FAB51EBA5 /* Pods-Downloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Downloader.release.xcconfig"; path = "Target Support Files/Pods-Downloader/Pods-Downloader.release.xcconfig"; sourceTree = "<group>"; };
+		87D374E3BF1F5862B10378B7 /* libPods-Downloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Downloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D2B6F1AD0C52C1CDE78CFD /* Pods-Downloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Downloader.debug.xcconfig"; path = "Target Support Files/Pods-Downloader/Pods-Downloader.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		035AA6AD22D2EE7800BBCE52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C3810236890ADA5EB9FCA9 /* libPods-Downloader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035AA6C522D2EE7D00BBCE52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035AA6D022D2EE7D00BBCE52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		035AA6A722D2EE7800BBCE52 = {
+			isa = PBXGroup;
+			children = (
+				035AA6B222D2EE7800BBCE52 /* Downloader */,
+				035AA6CB22D2EE7D00BBCE52 /* DownloaderTests */,
+				035AA6D622D2EE7D00BBCE52 /* DownloaderUITests */,
+				035AA6B122D2EE7800BBCE52 /* Products */,
+				5D72B80AEDBACFAB4872D0E8 /* Pods */,
+				96C052C15709E3884F9FB7A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		035AA6B122D2EE7800BBCE52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				035AA6B022D2EE7800BBCE52 /* Downloader.app */,
+				035AA6C822D2EE7D00BBCE52 /* DownloaderTests.xctest */,
+				035AA6D322D2EE7D00BBCE52 /* DownloaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		035AA6B222D2EE7800BBCE52 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				035AA6F922D2EFE600BBCE52 /* SXTNetworkMonitor.h */,
+				035AA6FA22D2EFE600BBCE52 /* SXTNetworkMonitor.m */,
+				035AA6E522D2EEAE00BBCE52 /* DownLoader */,
+				035AA6B322D2EE7800BBCE52 /* AppDelegate.h */,
+				035AA6B422D2EE7800BBCE52 /* AppDelegate.m */,
+				035AA6B622D2EE7800BBCE52 /* ViewController.h */,
+				035AA6B722D2EE7800BBCE52 /* ViewController.m */,
+				035AA6FC22D2F00000BBCE52 /* IKBLog.h */,
+				035AA6B922D2EE7800BBCE52 /* Main.storyboard */,
+				035AA6BC22D2EE7D00BBCE52 /* Assets.xcassets */,
+				035AA6BE22D2EE7D00BBCE52 /* LaunchScreen.storyboard */,
+				035AA6C122D2EE7D00BBCE52 /* Info.plist */,
+				035AA6C222D2EE7D00BBCE52 /* main.m */,
+			);
+			path = Downloader;
+			sourceTree = "<group>";
+		};
+		035AA6CB22D2EE7D00BBCE52 /* DownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				035AA6CC22D2EE7D00BBCE52 /* DownloaderTests.m */,
+				035AA6CE22D2EE7D00BBCE52 /* Info.plist */,
+			);
+			path = DownloaderTests;
+			sourceTree = "<group>";
+		};
+		035AA6D622D2EE7D00BBCE52 /* DownloaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				035AA6D722D2EE7D00BBCE52 /* DownloaderUITests.m */,
+				035AA6D922D2EE7D00BBCE52 /* Info.plist */,
+			);
+			path = DownloaderUITests;
+			sourceTree = "<group>";
+		};
+		035AA6E522D2EEAE00BBCE52 /* DownLoader */ = {
+			isa = PBXGroup;
+			children = (
+				035AA6E622D2EEAE00BBCE52 /* SXTDownloadDBManager.h */,
+				035AA6ED22D2EEAE00BBCE52 /* SXTDownloadDBManager.m */,
+				035AA6E922D2EEAE00BBCE52 /* SXTDownloadManager.h */,
+				035AA6F122D2EEAE00BBCE52 /* SXTDownloadManager.m */,
+				035AA6EA22D2EEAE00BBCE52 /* NSURLSession+CorrectedResumeData.h */,
+				035AA6F022D2EEAE00BBCE52 /* NSURLSession+CorrectedResumeData.m */,
+				035AA6E722D2EEAE00BBCE52 /* SXTCommonUtil.h */,
+				035AA6EC22D2EEAE00BBCE52 /* SXTCommonUtil.m */,
+				035AA6E822D2EEAE00BBCE52 /* SXTDownloadConst.h */,
+				035AA6EE22D2EEAE00BBCE52 /* SXTDownloadConst.m */,
+				035AA6EF22D2EEAE00BBCE52 /* SXTDownload.h */,
+				035AA6EB22D2EEAE00BBCE52 /* SXTDownloadModel.h */,
+				035AA6F222D2EEAE00BBCE52 /* SXTDownloadModel.m */,
+			);
+			path = DownLoader;
+			sourceTree = "<group>";
+		};
+		5D72B80AEDBACFAB4872D0E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7D2B6F1AD0C52C1CDE78CFD /* Pods-Downloader.debug.xcconfig */,
+				2FECA00853614A3FAB51EBA5 /* Pods-Downloader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		96C052C15709E3884F9FB7A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87D374E3BF1F5862B10378B7 /* libPods-Downloader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		035AA6AF22D2EE7800BBCE52 /* Downloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035AA6DC22D2EE7D00BBCE52 /* Build configuration list for PBXNativeTarget "Downloader" */;
+			buildPhases = (
+				D64AB0026684ADF98F45AD4A /* [CP] Check Pods Manifest.lock */,
+				035AA6AC22D2EE7800BBCE52 /* Sources */,
+				035AA6AD22D2EE7800BBCE52 /* Frameworks */,
+				035AA6AE22D2EE7800BBCE52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Downloader;
+			productName = Downloader;
+			productReference = 035AA6B022D2EE7800BBCE52 /* Downloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		035AA6C722D2EE7D00BBCE52 /* DownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035AA6DF22D2EE7D00BBCE52 /* Build configuration list for PBXNativeTarget "DownloaderTests" */;
+			buildPhases = (
+				035AA6C422D2EE7D00BBCE52 /* Sources */,
+				035AA6C522D2EE7D00BBCE52 /* Frameworks */,
+				035AA6C622D2EE7D00BBCE52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				035AA6CA22D2EE7D00BBCE52 /* PBXTargetDependency */,
+			);
+			name = DownloaderTests;
+			productName = DownloaderTests;
+			productReference = 035AA6C822D2EE7D00BBCE52 /* DownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		035AA6D222D2EE7D00BBCE52 /* DownloaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035AA6E222D2EE7D00BBCE52 /* Build configuration list for PBXNativeTarget "DownloaderUITests" */;
+			buildPhases = (
+				035AA6CF22D2EE7D00BBCE52 /* Sources */,
+				035AA6D022D2EE7D00BBCE52 /* Frameworks */,
+				035AA6D122D2EE7D00BBCE52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				035AA6D522D2EE7D00BBCE52 /* PBXTargetDependency */,
+			);
+			name = DownloaderUITests;
+			productName = DownloaderUITests;
+			productReference = 035AA6D322D2EE7D00BBCE52 /* DownloaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		035AA6A822D2EE7800BBCE52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = k12;
+				TargetAttributes = {
+					035AA6AF22D2EE7800BBCE52 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					035AA6C722D2EE7D00BBCE52 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 035AA6AF22D2EE7800BBCE52;
+					};
+					035AA6D222D2EE7D00BBCE52 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 035AA6AF22D2EE7800BBCE52;
+					};
+				};
+			};
+			buildConfigurationList = 035AA6AB22D2EE7800BBCE52 /* Build configuration list for PBXProject "Downloader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 035AA6A722D2EE7800BBCE52;
+			productRefGroup = 035AA6B122D2EE7800BBCE52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				035AA6AF22D2EE7800BBCE52 /* Downloader */,
+				035AA6C722D2EE7D00BBCE52 /* DownloaderTests */,
+				035AA6D222D2EE7D00BBCE52 /* DownloaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		035AA6AE22D2EE7800BBCE52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035AA6C022D2EE7D00BBCE52 /* LaunchScreen.storyboard in Resources */,
+				035AA6BD22D2EE7D00BBCE52 /* Assets.xcassets in Resources */,
+				035AA6BB22D2EE7800BBCE52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035AA6C622D2EE7D00BBCE52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035AA6D122D2EE7D00BBCE52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D64AB0026684ADF98F45AD4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Downloader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		035AA6AC22D2EE7800BBCE52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035AA6F322D2EEAE00BBCE52 /* SXTCommonUtil.m in Sources */,
+				035AA6F722D2EEAE00BBCE52 /* SXTDownloadManager.m in Sources */,
+				035AA6B822D2EE7800BBCE52 /* ViewController.m in Sources */,
+				035AA6FB22D2EFE600BBCE52 /* SXTNetworkMonitor.m in Sources */,
+				035AA6F822D2EEAE00BBCE52 /* SXTDownloadModel.m in Sources */,
+				035AA6F622D2EEAE00BBCE52 /* NSURLSession+CorrectedResumeData.m in Sources */,
+				035AA6C322D2EE7D00BBCE52 /* main.m in Sources */,
+				035AA6F422D2EEAE00BBCE52 /* SXTDownloadDBManager.m in Sources */,
+				035AA6B522D2EE7800BBCE52 /* AppDelegate.m in Sources */,
+				035AA6F522D2EEAE00BBCE52 /* SXTDownloadConst.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035AA6C422D2EE7D00BBCE52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035AA6CD22D2EE7D00BBCE52 /* DownloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		035AA6CF22D2EE7D00BBCE52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035AA6D822D2EE7D00BBCE52 /* DownloaderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		035AA6CA22D2EE7D00BBCE52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 035AA6AF22D2EE7800BBCE52 /* Downloader */;
+			targetProxy = 035AA6C922D2EE7D00BBCE52 /* PBXContainerItemProxy */;
+		};
+		035AA6D522D2EE7D00BBCE52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 035AA6AF22D2EE7800BBCE52 /* Downloader */;
+			targetProxy = 035AA6D422D2EE7D00BBCE52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		035AA6B922D2EE7800BBCE52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				035AA6BA22D2EE7800BBCE52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		035AA6BE22D2EE7D00BBCE52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				035AA6BF22D2EE7D00BBCE52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		035AA6DA22D2EE7D00BBCE52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		035AA6DB22D2EE7D00BBCE52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		035AA6DD22D2EE7D00BBCE52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D2B6F1AD0C52C1CDE78CFD /* Pods-Downloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF3JYPJQU7;
+				INFOPLIST_FILE = Downloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikebang.Downloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		035AA6DE22D2EE7D00BBCE52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FECA00853614A3FAB51EBA5 /* Pods-Downloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF3JYPJQU7;
+				INFOPLIST_FILE = Downloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikebang.Downloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		035AA6E022D2EE7D00BBCE52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF3JYPJQU7;
+				INFOPLIST_FILE = DownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikebang.DownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Downloader.app/Downloader";
+			};
+			name = Debug;
+		};
+		035AA6E122D2EE7D00BBCE52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF3JYPJQU7;
+				INFOPLIST_FILE = DownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikebang.DownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Downloader.app/Downloader";
+			};
+			name = Release;
+		};
+		035AA6E322D2EE7D00BBCE52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF3JYPJQU7;
+				INFOPLIST_FILE = DownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikebang.DownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Downloader;
+			};
+			name = Debug;
+		};
+		035AA6E422D2EE7D00BBCE52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF3JYPJQU7;
+				INFOPLIST_FILE = DownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikebang.DownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Downloader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		035AA6AB22D2EE7800BBCE52 /* Build configuration list for PBXProject "Downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035AA6DA22D2EE7D00BBCE52 /* Debug */,
+				035AA6DB22D2EE7D00BBCE52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		035AA6DC22D2EE7D00BBCE52 /* Build configuration list for PBXNativeTarget "Downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035AA6DD22D2EE7D00BBCE52 /* Debug */,
+				035AA6DE22D2EE7D00BBCE52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		035AA6DF22D2EE7D00BBCE52 /* Build configuration list for PBXNativeTarget "DownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035AA6E022D2EE7D00BBCE52 /* Debug */,
+				035AA6E122D2EE7D00BBCE52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		035AA6E222D2EE7D00BBCE52 /* Build configuration list for PBXNativeTarget "DownloaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035AA6E322D2EE7D00BBCE52 /* Debug */,
+				035AA6E422D2EE7D00BBCE52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 035AA6A822D2EE7800BBCE52 /* Project object */;
+}
