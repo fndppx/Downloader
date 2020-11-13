@@ -9,7 +9,7 @@
 #ifndef IKBLog_h
 #define IKBLog_h
 
-#ifdef COCOS2D_DEBUG
+#ifdef DEBUG
 #   define IKBLog(...) NSLog(__VA_ARGS__)
 #   define IKBLogMethod() IKBLog(@"[%@(%p) %@] invoked", NSStringFromClass([self class]), self, NSStringFromSelector(_cmd))
 #else

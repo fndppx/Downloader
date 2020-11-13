@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSString *downLoadURL = @"http://www.ikebang.com/book/down?timestamp=1605233802&url=5c1075b483ba88a9535e171e&token=76a32c75e668826dab72287e01c812de";
+    NSString *downLoadURL = @"http://sxtvideo.ikebang.com/5d5122b983ba88632e54396e/L.mp4";
     
     SXTDownloadModel *model = [SXTDownloadModel new];
     model.url = downLoadURL;
